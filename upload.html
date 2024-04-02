@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transcription Results</title>
+</head>
+<body>
+    <h2>Transcription Results</h2>
+    <ul>
+        {% for file in files %}
+        <li>
+            <strong>{{ file.file_name }}</strong>: {{ file.transcription }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
